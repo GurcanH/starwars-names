@@ -1,14 +1,15 @@
 {
   "name": "starwars-names-grcn",
-  "version": "1.3.0-beta.0",
+  "version": "0.0.0-development",
   "description": "Get random star wars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GurcanH/starwars-names.git"
+    "url": "https://github.com/GurcanH/starwars-names.git"
   },
   "keywords": [
     "random",
@@ -23,5 +24,13 @@
   "homepage": "https://github.com/GurcanH/starwars-names#readme",
   "dependencies": {
     "unique-random-array": "2.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "8.1.3",
+    "semantic-release": "^17.1.1"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
